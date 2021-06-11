@@ -1,6 +1,20 @@
+# macos stuff
 .DS_Store
+
+# intellij stuff
 .idea
-*.log
-tmp/
-.nextflow*
+
+# scratch directory
+_scratch
+
+# avoid accidentally commiting heavy files
+*/**/*fastq.gz
+*/**/*fasta
+*/**/*gbk
+
+# avoid commiting nextflow logs
+*nextflow*
+
+# ignore work and results directories
 work
+results*
