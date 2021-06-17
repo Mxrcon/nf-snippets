@@ -6,13 +6,13 @@ a simple and easy-to-read naming style to variables, process and other pipeline 
 
    pipeline name: pipeline\_name\_nf
 
-   environment variables: CASE
+   environment variables: VAR
 
    params.stuff: params.params\_Name
 
-   process name: SNAKE\_CASE
+   process name: PROCESS\_NAME
 
-   module file name: modules/tool_name/tool_name.nf
+   module file name: modules/tool\_name/tool\_name.nf
 
    channel name: name\_ch
 
@@ -20,7 +20,7 @@ a simple and easy-to-read naming style to variables, process and other pipeline 
 
    function name: function_name()
 
-   named inputs or outputs: camelCase
+   named inputs or outputs: inputName
 
    output folders: `${params.results_Dir}/tool_name`
 
