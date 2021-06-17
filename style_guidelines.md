@@ -3,28 +3,29 @@ This document has the objective of declaring naming guideline to keep
 a simple and easy-to-read naming style to variables, process and other pipeline contents.
 
 ## nf-related variables:
-    pipeline name: pipeline\_name\_nf
 
-    environment variables: CASE
+   pipeline name: pipeline\_name\_nf
 
-    params.stuff: params.params\_Name
+   environment variables: CASE
 
-    process name: SNAKE\_CASE
+   params.stuff: params.params\_Name
 
-    module file name: modules/tool_name/tool_name.nf
+   process name: SNAKE\_CASE
 
-    channel name: name\_ch
+   module file name: modules/tool_name/tool_name.nf
 
-    worflow name: NAME\_WF()
+   channel name: name\_ch
 
-    function name: function_name()
+   worflow name: NAME\_WF()
 
-    named inputs or outputs: camelCase
+   function name: function_name()
 
-    output folders: `${params.results_Dir}/tool_name`
+   named inputs or outputs: camelCase
+
+   output folders: `${params.results_Dir}/tool_name`
 
 ## for better tracing and readability
-    1. Use tags when process have queue channel input
-    1. named outputs are easy to read, I'd prefer to avoid the usage of out[1]
-    1. Avoid using "*" on stubs, use a tag to avoid this.
-    1. Use echo on stubs if possible, for better tracing on stub-run
+   1. Use tags when process have queue channel input
+   1. named outputs are easy to read, I'd prefer to avoid the usage of out[1]
+   1. Avoid using "*" on stubs, use a tag to avoid this.
+   1. Use echo on stubs if possible, for better tracing on stub-run
